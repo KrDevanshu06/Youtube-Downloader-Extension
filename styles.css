@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  #formats-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  button.format-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button.format-btn:hover {
+    background-color: #cc0000;
+  }
+  
