@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://127.0.0.1:5000"; // Replace with your real backend URL
+const BACKEND_URL = "web-production-390f1.up.railway.app/"; // Replace with your real backend URL
 
 async function getCurrentTabUrl() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
