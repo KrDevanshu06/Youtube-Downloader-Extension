@@ -1,6 +1,4 @@
-// popup.js
-
-const BACKEND_URL = "https://your-backend.onrender.com"; // Replace with your real backend URL
+const BACKEND_URL = "http://127.0.0.1:5000"; // Replace with your real backend URL
 
 async function getCurrentTabUrl() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -42,7 +40,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       const btn = document.createElement("button");
       btn.className = "format-btn";
       btn.textContent = `Download ${format.ext.toUpperCase()} ${format.resolution || ''}`;
-      btn.onclick = () => chrome.tabs.create({ url: format.url });
+      
+      btn.onclick = () => {
+        // Route the download through the Flask backend
+        const downloadUrl = `${BACKEND_URL}/download?url=${encodeURIComponent(tabUrl)}&format_id=${format.format_id}`;
+        chrome.tabs.create({ url: downloadUrl });
+      };
+
       container.appendChild(btn);
     });
 
