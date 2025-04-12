@@ -122,8 +122,8 @@ Contributions are welcome! Please follow these steps:
 ## 📧 Contact
 
 For questions or feedback, feel free to reach out:
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/KrDevanshu06)
+- **Email**: [Write me here](mailto:krdevanshu06@rediffmail.com)
+- **GitHub**: [KrDevanshu06](https://github.com/KrDevanshu06)
 
 ---
 
